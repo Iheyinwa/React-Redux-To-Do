@@ -1,0 +1,42 @@
+.text-center {
+  margin: auto;
+  position: relative;
+  top: 200px;
+  max-width: 500px;
+  padding: 20px;
+  border: 1px solid grey;
+  border-radius: 15px;
+}
+input {
+  margin-bottom: 15px;
+}
+.container {
+  margin-top: 10%;
+  max-width: 500px;
+  height: 100%;
+  border: 1px solid green;
+}
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.button {
+  padding: 10px;
+  width: fit-content;
+  border: 1px solid green;
+  border-radius: 5px;
+  color: white;
+}
+.task {
+  border: 1px solid grey;
+  margin: 0 4px 10px 4px;
+  background-color: rgb(238, 236, 236);
+  border-radius: 5px;
+  padding: 5px;
+}
+.icons {
+  float: right;
+  margin: 5px 10px 0 0;
+  cursor: pointer;
+}
