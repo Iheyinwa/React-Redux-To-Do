@@ -1,14 +1,18 @@
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { LOGOUT } from "../store/constants";
 import Button from "./Button";
 
-function Header({ onClick, showform }) {
+function Header() {
   const auth = useSelector((state) => state.auth);
-  // const dispatch = useDispatch();
+  const dispatch = useDispatch();
+  const handleLogout = () => {
+    dispatch({ type: LOGOUT, payload: null });
+  };
 
   return (
     <header className="header">
       <h2>{`${auth.userDetails?.username} planner`}</h2>
-      <Button text={showform ? "close" : "add"} onClick={onClick} />
+      <Button onClick={handleLogout} id="log" text="Log Out" color="red" />
     </header>
   );
 }

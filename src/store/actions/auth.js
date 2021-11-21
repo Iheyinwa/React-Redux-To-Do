@@ -1,13 +1,5 @@
 import { LOGIN, USER_DETAILS } from "../constants";
 
-// export const authAction = async (payload) => {
-//   setTimeout(() => {
-//     return {
-//       type: LOGIN,
-//       payload
-//     };
-//   }, 3000);
-// };
 export const authAction = (payload) => {
   return (dispatch, getState) => {
     return new Promise((resolve, reject) => {
