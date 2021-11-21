@@ -15,7 +15,7 @@ const store = () => {
     const result = next(action);
     const state = store.getState();
     localStorage.setItem(STORAGE, JSON.stringify(state));
-    // console.log(state)
+    // console.log(state);
     return result;
   };
   return createStore(

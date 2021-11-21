@@ -20,7 +20,7 @@ export const AddTask = () => {
   return (
     <form onSubmit={onSubmit}>
       <div className="form-control">
-        <label>Tasks:</label>
+        <label>Tasks: </label>
         <input
           type="text"
           placeholder="Add Task"
@@ -29,7 +29,7 @@ export const AddTask = () => {
         />
       </div>
       <div className="form-control">
-        <label>Day:</label>
+        <label>Day: </label>
         <input
           type="day"
           placeholder="Add day"

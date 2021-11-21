@@ -8,32 +8,50 @@
   border-radius: 15px;
 }
 input {
-  margin-bottom: 15px;
+  border: transparent;
+  border-bottom: 1px solid black;
+  border-radius: 3px;
+  padding: 5px;
+  margin-left: 10px;
+  width: 100%;
 }
 .container {
   margin-top: 10%;
   max-width: 500px;
   height: 100%;
-  border: 1px solid green;
+  border: 1px solid black;
+  border-radius: 10px;
 }
 .header {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  font-family: cursive;
+  border-bottom: 1px solid black;
+  margin: 5px 0px 5px 0px;
+  padding: 5px;
+  border-radius: 3px;
 }
 .button {
   padding: 10px;
   width: fit-content;
-  border: 1px solid green;
+  border: 1px solid grey;
   border-radius: 5px;
-  color: white;
+  color: black;
+  margin-right: 15px;
 }
 .task {
-  border: 1px solid grey;
-  margin: 0 4px 10px 4px;
-  background-color: rgb(238, 236, 236);
+  border: 1px solid rgb(216, 214, 214);
+  margin: 10px 4px 10px 4px;
+  background-color: rgb(216, 214, 214);
   border-radius: 5px;
   padding: 5px;
+}
+.form-control,
+.btn {
+  margin-bottom: 15px;
+  border: transparent;
+  width: 95%;
 }
 .icons {
   float: right;

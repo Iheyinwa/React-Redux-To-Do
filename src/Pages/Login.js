@@ -1,14 +1,13 @@
 import { useEffect, useState } from "react";
-import { connect, useDispatch, useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { authAction } from "../store/actions/auth";
 
 function Login(props) {
-  // console.log(props);
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
   const auth = useSelector((state) => state.auth);
-  console.log(auth);
+  // console.log(auth);
   const dispatch = useDispatch();
   const onSubmit = (e) => {
     e.preventDefault();
@@ -61,18 +60,3 @@ function Login(props) {
   );
 }
 export default Login;
-// const mapStateToProp = (state) => {
-//   // console.log(state.auth);
-//   return {
-//     isLogin: state.auth.login
-//   };
-// };
-
-// const mapDispatchToProps = (dispatch) => {
-//   return {
-//     authenticate: (payload) => {
-//       dispatch(authAction(payload));
-//     }
-//   };
-// };
-// export default connect(mapStateToProp, { authAction })(Login);
